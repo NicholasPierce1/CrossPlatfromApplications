@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PlanetaryConquest.Views.PlanetPage"
+             Title="Planets">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="25">
+            
+            <!-- creates a list view that'll expand vertically to hold planets-->
+            <ListView VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" x:Name="PlanetsList">
+                
+                <!-- creates view cell that holds the name of the planet and a detailed, distance to sun-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <TextCell Text="{Binding Name}" Detail="{Binding Distance, StringFormat='{0:F2}'}"/>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <!-- creates a stack layout with horizonatal orientation to hold the two entries (name and distance)-->
+            <StackLayout Orientation="Horizontal" Spacing="0">
+                <Entry 
+                    Placeholder="Planet Name"
+                    Keyboard="Plain"
+                    x:Name="PlanetNameEntry"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    WidthRequest="300"
+                    />
+                <Entry 
+                    Placeholder="Distance"
+                    Keyboard="Numeric"
+                    x:Name="PlanetDistanceEntry"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    />
+            </StackLayout>
+            
+            <!-- creates the submit button to append planet-->
+            <Button Text="Add Planet" HorizontalOptions="Center" Margin="0,0,0,25" Clicked="AddPlanet"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

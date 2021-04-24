@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinLayout.MainPage"
+             Title="Welcome To Paradise 😍">
+
+    <ContentPage.Content>
+        
+        <StackLayout Margin="0" Spacing="0">
+
+
+            <Image 
+                BackgroundColor="Black"
+                Source="https://space-facts.com/wp-content/uploads/mars.jpg"
+                HeightRequest="300"
+                Margin="0"
+                AnchorY="0"
+               
+                />
+
+            <Frame
+                BackgroundColor="Black"
+                BorderColor="Yellow"
+                CornerRadius="10"
+                Padding="5,0,10,10"
+                HasShadow="True"
+                Margin="0,30,0,0"
+                >
+                <Label 
+                Text="Q: What country recently left the European Union?"
+                TextColor="Yellow"
+                />
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0,5,0,0" Scale="1.1">
+
+                <Frame BackgroundColor="LightGray"  
+                   CornerRadius="0" 
+                   HasShadow="True"
+                   
+                   VerticalOptions="Start"
+                   Padding="0,0,5,0"
+                   
+                >
+
+                    <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Start" VerticalOptions="Center">
+
+                        <CheckBox 
+                            IsChecked="True"
+                            Color="{x:Static Color.Blue}" Scale="1"
+                        />
+
+                        <Label 
+                            Text="PT" 
+                            TextColor="Black" 
+                            VerticalOptions="Center" 
+                            FontSize="Small"
+                        />
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame BackgroundColor="LightGray"  
+                   CornerRadius="0" 
+                   HasShadow="True"
+                   
+                   VerticalOptions="Start"
+                   Padding="0,0,5,0"
+                   
+                >
+
+                    <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Start" VerticalOptions="Center">
+
+                        <CheckBox 
+                            IsChecked="True"
+                            Color="{x:Static Color.Blue}" Scale="1"
+                        />
+
+                        <Label 
+                            Text="ES" 
+                            TextColor="Black" 
+                            VerticalOptions="Center" 
+                            FontSize="Small"
+                        />
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame BackgroundColor="LightGray"  
+                   CornerRadius="0" 
+                   HasShadow="True"
+                  
+                   VerticalOptions="Start"
+                   Padding="0,0,5,0"
+                   
+                >
+
+                    <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Start" VerticalOptions="Center">
+
+                        <CheckBox 
+                            IsChecked="True"
+                            Color="{x:Static Color.Blue}" Scale="1"
+                        />
+
+                        <Label 
+                            Text="FR" 
+                            TextColor="Black" 
+                            VerticalOptions="Center" 
+                            FontSize="Small"
+                        />
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame BackgroundColor="LightGray"  
+                   CornerRadius="0" 
+                   HasShadow="True"
+                  
+                   VerticalOptions="Start"
+                   Padding="0,0,5,0"
+                   
+                >
+
+                    <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Start" VerticalOptions="Center">
+
+                        <CheckBox 
+                            IsChecked="True"
+                            Color="{x:Static Color.Blue}" Scale="1"
+                        />
+
+                        <Label 
+                            Text="UK" 
+                            TextColor="Black" 
+                            VerticalOptions="Center" 
+                            FontSize="Small"
+                        />
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame BackgroundColor="LightGray"  
+                   CornerRadius="0" 
+                   HasShadow="True"
+                  
+                   VerticalOptions="Start"
+                   Padding="0,0,5,0"
+                   
+                >
+
+                    <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Start" VerticalOptions="Center">
+
+                        <CheckBox 
+                            IsChecked="True"
+                            Color="{x:Static Color.Blue}" Scale="1"
+                        />
+
+                        <Label 
+                            Text="CH" 
+                            TextColor="Black" 
+                            VerticalOptions="Center" 
+                            FontSize="Small"
+                        />
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+
+            <Button Text="Check Answer" FontSize="Large" TextColor="Blue" BackgroundColor="GhostWhite" Margin="0,50,0,0" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
